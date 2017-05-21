@@ -1,0 +1,39 @@
+{
+  "name": "react-repeat-component",
+  "version": "1.0.0",
+  "description": "⤵️  Render your components N times without ugly for loops. ⤵️",
+  "author": "Andrea Puddu <me@nuragic.io>",
+  "repository": {
+  	"type": "git",
+  	"url": "https://github.com/nuragic/react-repeat-component.git"
+  },
+  "license": "MIT",
+  "main": "dist/Repeat.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "test": "react-scripts test --env=jsdom",
+    "build": "npm run clean && npm run build:package",
+    "build:package": "babel src -d dist --ignore test.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-module-resolver": "^2.7.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^2.8.2",
+    "react": "^15.5.4",
+    "react-addons-test-utils": "^15.5.1",
+    "react-dom": "^15.5.4",
+    "react-scripts": "^1.0.7",
+    "react-test-renderer": "^15.5.4"
+  },
+  "peerDependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  }
+}
