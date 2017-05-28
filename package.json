@@ -15,7 +15,8 @@
     "build": "npm run clean && npm run build:package",
     "build:package": "babel src -d dist --ignore test.js",
     "preversion": "npm run test",
-    "version": "npm run build"
+    "version": "npm run build",
+    "postpublish": "git push && git push --tags"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
