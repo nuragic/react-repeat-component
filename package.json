@@ -1,6 +1,6 @@
 {
   "name": "react-repeat-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "⤵️  Render your components N times without ugly for loops. ⤵️",
   "author": "Andrea Puddu <me@nuragic.io>",
   "repository": {
