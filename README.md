@@ -8,7 +8,9 @@ _[Heavily inspired](https://giphy.com/gifs/cat-food-raccon-HUtsjiqzv1M9a/tile) b
 
 Let's say you just want to repeat `10` times an element, a custom component, whatever, but you don't have an `Array` to `map()` and render those elements. So, you end up doing something like:
 
-```
+```js
+import React from 'react';
+
 class ProgressBar extends React.Component {
   render() {
     let steps = [];
@@ -28,7 +30,10 @@ Not bad... Just a bit ugly isn't it? But then, you eventually end up repeating t
 
 This is how to achieve the same result using the `<Repeat>` component.
 
-```
+```js
+import React from 'react';
+import Repeat from 'react-repeat-component';
+
 class ProgressBar extends React.Component {
   render() {
     return(
